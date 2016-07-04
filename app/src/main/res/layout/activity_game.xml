@@ -57,28 +57,28 @@
             android:layout_width="46dp"
             android:layout_height="48dp"
             android:text="UR"
-            android:id="@+id/button"
+            android:id="@+id/btnGameUR"
             android:layout_gravity="right|top"/>
 
         <Button
             android:layout_width="46dp"
             android:layout_height="48dp"
             android:text="DR"
-            android:id="@+id/button2"
+            android:id="@+id/btnGameDR"
             android:layout_gravity="right|bottom"/>
 
         <Button
             android:layout_width="46dp"
             android:layout_height="48dp"
             android:text="DL"
-            android:id="@+id/button3"
+            android:id="@+id/btnGameDL"
             android:layout_gravity="left|bottom"/>
 
         <Button
             android:layout_width="46dp"
             android:layout_height="48dp"
             android:text="UL"
-            android:id="@+id/button4"
+            android:id="@+id/btnGameUL"
             android:layout_gravity="left|top"
             android:allowUndo="false"/>
 

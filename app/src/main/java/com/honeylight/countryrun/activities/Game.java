@@ -33,6 +33,18 @@ public class Game extends AppCompatActivity
         ui.btnGameRight = (Button) findViewById(R.id.btnGameRight);
         ui.btnGameRight.setOnTouchListener(new RepeatListener(400, 100, new GameOnClickListener()));
 
+        ui.btnGameUR = (Button) findViewById(R.id.btnGameUR);
+        ui.btnGameUR.setOnTouchListener(new RepeatListener(400, 100, new GameOnClickListener()));
+
+        ui.btnGameDR= (Button) findViewById(R.id.btnGameDR);
+        ui.btnGameDR.setOnTouchListener(new RepeatListener(400, 100, new GameOnClickListener()));
+
+        ui.btnGameUL = (Button) findViewById(R.id.btnGameUL);
+        ui.btnGameUL.setOnTouchListener(new RepeatListener(400, 100, new GameOnClickListener()));
+
+        ui.btnGameDL = (Button) findViewById(R.id.btnGameDL);
+        ui.btnGameDL.setOnTouchListener(new RepeatListener(400, 100, new GameOnClickListener()));
+
         testPlayer = (Player) findViewById(R.id.testPlayer);
     }
 }

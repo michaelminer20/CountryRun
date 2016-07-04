@@ -7,5 +7,6 @@ import android.widget.Button;
  */
 public class GameUi
 {
-    public Button btnGameUp, btnGameDown, btnGameLeft, btnGameRight;
+    public Button btnGameUp, btnGameDown, btnGameLeft, btnGameRight, btnGameUR, btnGameDR,
+    btnGameUL, btnGameDL;
 }
