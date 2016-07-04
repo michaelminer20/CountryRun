@@ -12,11 +12,11 @@
 
     <com.honeylight.countryrun.characters.Player
         android:id="@+id/testPlayer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/player"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
         android:layout_alignParentStart="false"
-        android:foregroundGravity="center_vertical|center_horizontal"/>
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:background="#ff0000"/>
 
     <FrameLayout
         android:layout_width="128dp"
@@ -26,32 +26,61 @@
         android:id="@+id/joystickLayout">
 
         <Button
-            android:layout_width="48dp"
+            android:layout_width="46dp"
             android:layout_height="48dp"
             android:text="U"
             android:id="@+id/btnGameUp"
             android:layout_gravity="center_horizontal|top"/>
 
         <Button
-            android:layout_width="48dp"
+            android:layout_width="46dp"
             android:layout_height="48dp"
             android:text="L"
             android:id="@+id/btnGameLeft"
             android:layout_gravity="left|center_vertical"/>
 
         <Button
-            android:layout_width="48dp"
+            android:layout_width="46dp"
             android:layout_height="48dp"
             android:text="D"
             android:id="@+id/btnGameDown"
             android:layout_gravity="center_horizontal|bottom"/>
 
         <Button
-            android:layout_width="48dp"
+            android:layout_width="46dp"
             android:layout_height="48dp"
             android:text="R"
             android:id="@+id/btnGameRight"
             android:layout_gravity="right|center_vertical"/>
+
+        <Button
+            android:layout_width="46dp"
+            android:layout_height="48dp"
+            android:text="UR"
+            android:id="@+id/button"
+            android:layout_gravity="right|top"/>
+
+        <Button
+            android:layout_width="46dp"
+            android:layout_height="48dp"
+            android:text="DR"
+            android:id="@+id/button2"
+            android:layout_gravity="right|bottom"/>
+
+        <Button
+            android:layout_width="46dp"
+            android:layout_height="48dp"
+            android:text="DL"
+            android:id="@+id/button3"
+            android:layout_gravity="left|bottom"/>
+
+        <Button
+            android:layout_width="46dp"
+            android:layout_height="48dp"
+            android:text="UL"
+            android:id="@+id/button4"
+            android:layout_gravity="left|top"
+            android:allowUndo="false"/>
 
     </FrameLayout>
 
