@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.honeylight.countryrun.activities.Game">
+
+    <com.honeylight.countryrun.characters.Player
+        android:id="@+id/testPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/player"
+        android:layout_alignParentStart="false"
+        android:foregroundGravity="center_vertical|center_horizontal"/>
+
+    <FrameLayout
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/joystickLayout">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="U"
+            android:id="@+id/btnGameUp"
+            android:layout_gravity="center_horizontal|top"/>
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="L"
+            android:id="@+id/btnGameLeft"
+            android:layout_gravity="left|center_vertical"/>
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="D"
+            android:id="@+id/btnGameDown"
+            android:layout_gravity="center_horizontal|bottom"/>
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="R"
+            android:id="@+id/btnGameRight"
+            android:layout_gravity="right|center_vertical"/>
+
+    </FrameLayout>
+
+</RelativeLayout>
