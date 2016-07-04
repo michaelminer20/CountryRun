@@ -8,6 +8,7 @@ import com.honeylight.countryrun.R;
 import com.honeylight.countryrun.characters.Player;
 import com.honeylight.countryrun.listeners.activity_menu.GameOnClickListener;
 import com.honeylight.countryrun.ui.GameUi;
+import com.honeylight.countryrun.utils.RepeatListener;
 
 public class Game extends AppCompatActivity
 {
@@ -21,20 +22,17 @@ public class Game extends AppCompatActivity
         GameUi ui = new GameUi();
 
         ui.btnGameUp = (Button) findViewById(R.id.btnGameUp);
-        ui.btnGameUp.setOnHoverListener(new GameOnClickListener());
+        ui.btnGameUp.setOnTouchListener(new RepeatListener(400, 100, new GameOnClickListener()));
 
         ui.btnGameDown = (Button) findViewById(R.id.btnGameDown);
-        ui.btnGameDown.setOnHoverListener(new GameOnClickListener());
+        ui.btnGameDown.setOnTouchListener(new RepeatListener(400, 100, new GameOnClickListener()));
 
         ui.btnGameLeft = (Button) findViewById(R.id.btnGameLeft);
-        ui.btnGameLeft.setOnHoverListener(new GameOnClickListener());
+        ui.btnGameLeft.setOnTouchListener(new RepeatListener(400, 100, new GameOnClickListener()));
 
         ui.btnGameRight = (Button) findViewById(R.id.btnGameRight);
-        ui.btnGameRight.setOnHoverListener(new GameOnClickListener());
+        ui.btnGameRight.setOnTouchListener(new RepeatListener(400, 100, new GameOnClickListener()));
 
         testPlayer = (Player) findViewById(R.id.testPlayer);
-        testPlayer.moveUp();
-
-
     }
 }
