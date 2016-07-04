@@ -17,7 +17,7 @@ public class GameOnClickListener implements View.OnHoverListener
         switch (v.getId())
         {
             case R.id.btnGameUp:
-                Game.testPlayer.moveUp();
+                Game.testPlayer.moveUp();//Some code
                 break;
 
             case R.id.btnGameDown:
