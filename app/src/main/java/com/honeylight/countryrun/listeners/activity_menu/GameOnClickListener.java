@@ -1,5 +1,6 @@
 package com.honeylight.countryrun.listeners.activity_menu;
 
+import android.view.MotionEvent;
 import android.view.View;
 
 import com.honeylight.countryrun.R;
@@ -8,10 +9,10 @@ import com.honeylight.countryrun.activities.Game;
 /**
  * OnClickListener for main menu
  */
-public class GameOnClickListener implements View.OnClickListener
+public class GameOnClickListener implements View.OnHoverListener
 {
     @Override
-    public void onClick(View v)
+    public boolean onHover(View v, MotionEvent event)
     {
         switch (v.getId())
         {
@@ -24,12 +25,14 @@ public class GameOnClickListener implements View.OnClickListener
                 break;
 
             case R.id.btnGameLeft:
-
+                Game.testPlayer.moveLeft();
                 break;
 
             case R.id.btnGameRight:
-
+                Game.testPlayer.moveRight();
                 break;
         }
+
+        return false;
     }
 }

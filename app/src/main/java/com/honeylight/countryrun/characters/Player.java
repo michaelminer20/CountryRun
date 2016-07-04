@@ -27,21 +27,21 @@ public class Player extends ImageView
 
     public void moveUp()
     {
-        animate().translationY(getTranslationY() - distance).setDuration(1000);
+        animate().translationY(getTranslationY() - distance).setDuration(100);
     }
 
     public void moveDown()
     {
-        animate().translationY(getTranslationY() + distance).setDuration(1000);
+        animate().translationY(getTranslationY() + distance).setDuration(100);
     }
 
     public void moveLeft()
     {
-
+        animate().translationX(getTranslationX() - distance).setDuration(100);
     }
 
     public void moveRight()
     {
-
+        animate().translationX(getTranslationX() + distance).setDuration(100);
     }
 }

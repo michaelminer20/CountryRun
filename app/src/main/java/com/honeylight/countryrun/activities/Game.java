@@ -21,10 +21,16 @@ public class Game extends AppCompatActivity
         GameUi ui = new GameUi();
 
         ui.btnGameUp = (Button) findViewById(R.id.btnGameUp);
-        ui.btnGameUp.setOnClickListener(new GameOnClickListener());
+        ui.btnGameUp.setOnHoverListener(new GameOnClickListener());
 
         ui.btnGameDown = (Button) findViewById(R.id.btnGameDown);
-        ui.btnGameDown.setOnClickListener(new GameOnClickListener());
+        ui.btnGameDown.setOnHoverListener(new GameOnClickListener());
+
+        ui.btnGameLeft = (Button) findViewById(R.id.btnGameLeft);
+        ui.btnGameLeft.setOnHoverListener(new GameOnClickListener());
+
+        ui.btnGameRight = (Button) findViewById(R.id.btnGameRight);
+        ui.btnGameRight.setOnHoverListener(new GameOnClickListener());
 
         testPlayer = (Player) findViewById(R.id.testPlayer);
         testPlayer.moveUp();
