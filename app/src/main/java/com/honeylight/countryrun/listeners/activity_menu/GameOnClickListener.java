@@ -16,7 +16,7 @@ public class GameOnClickListener implements View.OnClickListener
         switch (v.getId())
         {
             case R.id.btnGameUp:
-                Game.testPlayer.moveUp();//Some code
+                Game.testPlayer.moveUp();
                 break;
 
             case R.id.btnGameDown:
@@ -29,6 +29,22 @@ public class GameOnClickListener implements View.OnClickListener
 
             case R.id.btnGameRight:
                 Game.testPlayer.moveRight();
+                break;
+
+            case R.id.btnGameUR:
+                Game.testPlayer.moveUR();
+                break;
+
+            case R.id.btnGameDR:
+                Game.testPlayer.moveDR();
+                break;
+
+            case R.id.btnGameUL:
+                Game.testPlayer.moveUL();
+                break;
+
+            case R.id.btnGameDL:
+                Game.testPlayer.moveDL();
                 break;
         }
     }
